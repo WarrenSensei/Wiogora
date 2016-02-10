@@ -1,0 +1,97 @@
+<%= form_for(@camper) do |f| %>
+  <% if @camper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@camper.errors.count, "error") %> prohibited this camper from being saved:</h2>
+
+      <ul>
+      <% @camper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :family_id %><br>
+    <%= f.text_field :family_id %>
+  </div>
+  <div class="field">
+    <%= f.label :alt_address1 %><br>
+    <%= f.text_field :alt_address1 %>
+  </div>
+  <div class="field">
+    <%= f.label :alt_address2 %><br>
+    <%= f.text_field :alt_address2 %>
+  </div>
+  <div class="field">
+    <%= f.label :alt_city %><br>
+    <%= f.text_field :alt_city %>
+  </div>
+  <div class="field">
+    <%= f.label :alt_state %><br>
+    <%= f.text_field :alt_state %>
+  </div>
+  <div class="field">
+    <%= f.label :alt_zipcode %><br>
+    <%= f.text_field :alt_zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :preferred_name %><br>
+    <%= f.text_field :preferred_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pronoun %><br>
+    <%= f.text_field :pronoun %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate %><br>
+    <%= f.date_select :birthdate %>
+  </div>
+  <div class="field">
+    <%= f.label :faith %><br>
+    <%= f.text_field :faith %>
+  </div>
+  <div class="field">
+    <%= f.label :congregation %><br>
+    <%= f.text_field :congregation %>
+  </div>
+  <div class="field">
+    <%= f.label :house %><br>
+    <%= f.text_field :house %>
+  </div>
+  <div class="field">
+    <%= f.label :house_preference %><br>
+    <%= f.text_field :house_preference %>
+  </div>
+  <div class="field">
+    <%= f.label :house_q1 %><br>
+    <%= f.text_field :house_q1 %>
+  </div>
+  <div class="field">
+    <%= f.label :house_q2 %><br>
+    <%= f.text_field :house_q2 %>
+  </div>
+  <div class="field">
+    <%= f.label :house_q3 %><br>
+    <%= f.text_field :house_q3 %>
+  </div>
+  <div class="field">
+    <%= f.label :friends %><br>
+    <%= f.text_field :friends %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,72 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parent1 name:</strong>
+  <%= @family.parent1_name %>
+</p>
+
+<p>
+  <strong>Parent2 name:</strong>
+  <%= @family.parent2_name %>
+</p>
+
+<p>
+  <strong>Address1:</strong>
+  <%= @family.address1 %>
+</p>
+
+<p>
+  <strong>Address2:</strong>
+  <%= @family.address2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @family.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @family.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @family.zipcode %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @family.phone %>
+</p>
+
+<p>
+  <strong>Alt phone:</strong>
+  <%= @family.alt_phone %>
+</p>
+
+<p>
+  <strong>Trusted adults:</strong>
+  <%= @family.trusted_adults %>
+</p>
+
+<p>
+  <strong>Referral:</strong>
+  <%= @family.referral %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @family.notes %>
+</p>
+
+<p>
+  <strong>Campers:</strong>
+  <% @family.campers.each do |camper| %>
+    <br>
+    <%= link_to camper.first_name || "Camper", camper_path(camper) %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_family_path(@family) %> |
+<%= link_to 'Back', families_path %>
