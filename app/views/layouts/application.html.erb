@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<ul class=sites-header-nav>
+	<li> <%= link_to "Home", root_path %> </li>
+	<li> <%= link_to "Campers", campers_path %> </li>
+	<li> <%= link_to "Families", families_path %> </li>
+	<li> <%= link_to "Payments", payments_path %> </li>
+	<li> <%= link_to "Registrations", registrations_path %> </li>
+	<li> <%= link_to "Shirt orders", shirt_orders_path %> </li>
+</ul>
+
 <%= yield %>
 
 </body>

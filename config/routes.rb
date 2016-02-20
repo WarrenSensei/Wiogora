@@ -4,6 +4,13 @@ Rails.application.routes.draw do
   resources :payments
   resources :campers
   resources :families
+
+  root 'pages#index'
+
+  get 'pages' => 'pages#index'
+
+  get 'pages/staff_opportunities' => 'pages#staff_opportunities'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
