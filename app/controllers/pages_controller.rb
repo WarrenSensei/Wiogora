@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 
   end
 
+  def FAQ
+
+  end
+
  end

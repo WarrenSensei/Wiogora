@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'pages/staff_opportunities' => 'pages#staff_opportunities'
 
+  get 'pages/faq' => 'pages#faq'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
