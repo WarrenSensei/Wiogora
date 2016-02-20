@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210211529) do
+ActiveRecord::Schema.define(version: 20160220202656) do
 
   create_table "campers", force: :cascade do |t|
     t.integer  "family_id"
@@ -57,6 +57,46 @@ ActiveRecord::Schema.define(version: 20160210211529) do
     t.string   "parent2_last_name"
     t.string   "parent1_email"
     t.string   "parent2_email"
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.integer  "family_id"
+    t.float    "amount"
+    t.string   "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registrations", force: :cascade do |t|
+    t.boolean  "approved"
+    t.boolean  "cancelled"
+    t.integer  "year"
+    t.boolean  "returning"
+    t.float    "cost"
+    t.string   "insurance"
+    t.string   "allergies"
+    t.text     "health_details"
+    t.string   "shirt_size"
+    t.boolean  "before_care"
+    t.boolean  "after_care"
+    t.time     "dropoff_time"
+    t.time     "pickup_time"
+    t.boolean  "medical_release"
+    t.boolean  "photo_release"
+    t.boolean  "philosophy_release"
+    t.boolean  "general_release"
+    t.text     "notes"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "shirt_orders", force: :cascade do |t|
+    t.string   "shirt_size"
+    t.integer  "number"
+    t.boolean  "fulfilled"
+    t.string   "house"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

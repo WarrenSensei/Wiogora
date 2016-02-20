@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  approved: false
+  cancelled: false
+  year: 1
+  returning: false
+  cost: 1.5
+  insurance: MyString
+  allergies: MyString
+  health_details: MyText
+  shirt_size: MyString
+  before_care: false
+  after_care: false
+  dropoff_time: 2016-02-20 15:26:56
+  pickup_time: 2016-02-20 15:26:56
+  medical_release: false
+  photo_release: false
+  philosophy_release: false
+  general_release: false
+  notes: MyText
+
+two:
+  approved: false
+  cancelled: false
+  year: 1
+  returning: false
+  cost: 1.5
+  insurance: MyString
+  allergies: MyString
+  health_details: MyText
+  shirt_size: MyString
+  before_care: false
+  after_care: false
+  dropoff_time: 2016-02-20 15:26:56
+  pickup_time: 2016-02-20 15:26:56
+  medical_release: false
+  photo_release: false
+  philosophy_release: false
+  general_release: false
+  notes: MyText

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Shirt Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shirt size</th>
+      <th>Number</th>
+      <th>Fulfilled</th>
+      <th>House</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shirt_orders.each do |shirt_order| %>
+      <tr>
+        <td><%= shirt_order.shirt_size %></td>
+        <td><%= shirt_order.number %></td>
+        <td><%= shirt_order.fulfilled %></td>
+        <td><%= shirt_order.house %></td>
+        <td><%= link_to 'Show', shirt_order %></td>
+        <td><%= link_to 'Edit', edit_shirt_order_path(shirt_order) %></td>
+        <td><%= link_to 'Destroy', shirt_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shirt order', new_shirt_order_path %>

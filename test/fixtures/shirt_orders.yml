@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shirt_size: MyString
+  number: 1
+  fulfilled: false
+  house: MyString
+
+two:
+  shirt_size: MyString
+  number: 1
+  fulfilled: false
+  house: MyString
