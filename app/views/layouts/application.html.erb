@@ -8,17 +8,22 @@
 </head>
 <body>
 
-<ul class=sites-header-nav>
-	<li> <%= link_to "Home", root_path %> </li>
-	<li> <%= link_to "Campers", campers_path %> </li>
-	<li> <%= link_to "Families", families_path %> </li>
-	<li> <%= link_to "Payments", payments_path %> </li>
-	<li> <%= link_to "Registrations", registrations_path %> </li>
-	<li> <%= link_to "Shirt orders", shirt_orders_path %> </li>
-  <li> <%= link_to "Frequently Asked Questions", pages_faq_path %> </li>
-</ul>
+	<div id='background-image'></div> <!-- necessary for early versions if IE to work -->
 
-<%= yield %>
+	<%= link_to image_tag("logo.png", alt: "Wiogora School of Wonder & Wisdom"), root_path, :class => "sites-header-logo" %>
+
+
+	<ul class=sites-header-nav>
+		<%= link_to_in_li "Home", root_path %>
+		<%= link_to_in_li "Campers", campers_path %>
+		<%= link_to_in_li "Families", families_path %>
+		<%= link_to_in_li "Payments", payments_path %>
+		<%= link_to_in_li "Registrations", registrations_path %>
+		<%= link_to_in_li "Shirt orders", shirt_orders_path %>
+		<%= link_to_in_li "Frequently Asked Questions", pages_faq_path %>
+	</ul>
+
+	<%= yield %>
 
 </body>
 </html>
