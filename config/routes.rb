@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :registrations
+  resources :shirt_orders
+  resources :payments
   resources :campers
   resources :families
   # The priority is based upon order of creation: first created -> highest priority.

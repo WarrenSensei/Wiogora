@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registrations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Approved</th>
+      <th>Cancelled</th>
+      <th>Year</th>
+      <th>Returning</th>
+      <th>Cost</th>
+      <th>Insurance</th>
+      <th>Allergies</th>
+      <th>Health details</th>
+      <th>Shirt size</th>
+      <th>Before care</th>
+      <th>After care</th>
+      <th>Dropoff time</th>
+      <th>Pickup time</th>
+      <th>Medical release</th>
+      <th>Photo release</th>
+      <th>Philosophy release</th>
+      <th>General release</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registrations.each do |registration| %>
+      <tr>
+        <td><%= registration.approved %></td>
+        <td><%= registration.cancelled %></td>
+        <td><%= registration.year %></td>
+        <td><%= registration.returning %></td>
+        <td><%= registration.cost %></td>
+        <td><%= registration.insurance %></td>
+        <td><%= registration.allergies %></td>
+        <td><%= registration.health_details %></td>
+        <td><%= registration.shirt_size %></td>
+        <td><%= registration.before_care %></td>
+        <td><%= registration.after_care %></td>
+        <td><%= registration.dropoff_time %></td>
+        <td><%= registration.pickup_time %></td>
+        <td><%= registration.medical_release %></td>
+        <td><%= registration.photo_release %></td>
+        <td><%= registration.philosophy_release %></td>
+        <td><%= registration.general_release %></td>
+        <td><%= registration.notes %></td>
+        <td><%= link_to 'Show', registration %></td>
+        <td><%= link_to 'Edit', edit_registration_path(registration) %></td>
+        <td><%= link_to 'Destroy', registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registration', new_registration_path %>

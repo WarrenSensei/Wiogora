@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Shirt size:</strong>
+  <%= @shirt_order.shirt_size %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @shirt_order.number %>
+</p>
+
+<p>
+  <strong>Fulfilled:</strong>
+  <%= @shirt_order.fulfilled %>
+</p>
+
+<p>
+  <strong>House:</strong>
+  <%= @shirt_order.house %>
+</p>
+
+<%= link_to 'Edit', edit_shirt_order_path(@shirt_order) %> |
+<%= link_to 'Back', shirt_orders_path %>

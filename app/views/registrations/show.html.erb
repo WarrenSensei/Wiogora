@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @registration.approved %>
+</p>
+
+<p>
+  <strong>Cancelled:</strong>
+  <%= @registration.cancelled %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @registration.year %>
+</p>
+
+<p>
+  <strong>Returning:</strong>
+  <%= @registration.returning %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @registration.cost %>
+</p>
+
+<p>
+  <strong>Insurance:</strong>
+  <%= @registration.insurance %>
+</p>
+
+<p>
+  <strong>Allergies:</strong>
+  <%= @registration.allergies %>
+</p>
+
+<p>
+  <strong>Health details:</strong>
+  <%= @registration.health_details %>
+</p>
+
+<p>
+  <strong>Shirt size:</strong>
+  <%= @registration.shirt_size %>
+</p>
+
+<p>
+  <strong>Before care:</strong>
+  <%= @registration.before_care %>
+</p>
+
+<p>
+  <strong>After care:</strong>
+  <%= @registration.after_care %>
+</p>
+
+<p>
+  <strong>Dropoff time:</strong>
+  <%= @registration.dropoff_time %>
+</p>
+
+<p>
+  <strong>Pickup time:</strong>
+  <%= @registration.pickup_time %>
+</p>
+
+<p>
+  <strong>Medical release:</strong>
+  <%= @registration.medical_release %>
+</p>
+
+<p>
+  <strong>Photo release:</strong>
+  <%= @registration.photo_release %>
+</p>
+
+<p>
+  <strong>Philosophy release:</strong>
+  <%= @registration.philosophy_release %>
+</p>
+
+<p>
+  <strong>General release:</strong>
+  <%= @registration.general_release %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @registration.notes %>
+</p>
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>

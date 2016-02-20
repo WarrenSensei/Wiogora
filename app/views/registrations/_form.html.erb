@@ -1,0 +1,89 @@
+<%= form_for(@registration) do |f| %>
+  <% if @registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+      <% @registration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :approved %><br>
+    <%= f.check_box :approved %>
+  </div>
+  <div class="field">
+    <%= f.label :cancelled %><br>
+    <%= f.check_box :cancelled %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :returning %><br>
+    <%= f.check_box :returning %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :insurance %><br>
+    <%= f.text_field :insurance %>
+  </div>
+  <div class="field">
+    <%= f.label :allergies %><br>
+    <%= f.text_field :allergies %>
+  </div>
+  <div class="field">
+    <%= f.label :health_details %><br>
+    <%= f.text_area :health_details %>
+  </div>
+  <div class="field">
+    <%= f.label :shirt_size %><br>
+    <%= f.text_field :shirt_size %>
+  </div>
+  <div class="field">
+    <%= f.label :before_care %><br>
+    <%= f.check_box :before_care %>
+  </div>
+  <div class="field">
+    <%= f.label :after_care %><br>
+    <%= f.check_box :after_care %>
+  </div>
+  <div class="field">
+    <%= f.label :dropoff_time %><br>
+    <%= f.time_select :dropoff_time %>
+  </div>
+  <div class="field">
+    <%= f.label :pickup_time %><br>
+    <%= f.time_select :pickup_time %>
+  </div>
+  <div class="field">
+    <%= f.label :medical_release %><br>
+    <%= f.check_box :medical_release %>
+  </div>
+  <div class="field">
+    <%= f.label :photo_release %><br>
+    <%= f.check_box :photo_release %>
+  </div>
+  <div class="field">
+    <%= f.label :philosophy_release %><br>
+    <%= f.check_box :philosophy_release %>
+  </div>
+  <div class="field">
+    <%= f.label :general_release %><br>
+    <%= f.check_box :general_release %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
