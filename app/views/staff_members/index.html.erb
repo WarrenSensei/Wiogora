@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Staff Members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Family</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Preferred name</th>
+      <th>Wiogora name</th>
+      <th>Phone</th>
+      <th>Address1</th>
+      <th>Address2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Email</th>
+      <th>Education experience</th>
+      <th>Why work here</th>
+      <th>Availability</th>
+      <th>Role</th>
+      <th>Role category</th>
+      <th>Shirt size</th>
+      <th>Returning staff</th>
+      <th>House</th>
+      <th>Guiding class</th>
+      <th>Food allergies</th>
+      <th>Background check agreement</th>
+      <th>Program philosophy agreement</th>
+      <th>Notes</th>
+      <th>Parent permission</th>
+      <th>Parent email</th>
+      <th>Entering grade</th>
+      <th>Activities</th>
+      <th>Essay</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @staff_members.each do |staff_member| %>
+      <tr>
+        <td><%= staff_member.family_id %></td>
+        <td><%= staff_member.first_name %></td>
+        <td><%= staff_member.last_name %></td>
+        <td><%= staff_member.preferred_name %></td>
+        <td><%= staff_member.wiogora_name %></td>
+        <td><%= staff_member.phone %></td>
+        <td><%= staff_member.address1 %></td>
+        <td><%= staff_member.address2 %></td>
+        <td><%= staff_member.city %></td>
+        <td><%= staff_member.state %></td>
+        <td><%= staff_member.zipcode %></td>
+        <td><%= staff_member.email %></td>
+        <td><%= staff_member.education_experience %></td>
+        <td><%= staff_member.why_work_here %></td>
+        <td><%= staff_member.availability %></td>
+        <td><%= staff_member.role %></td>
+        <td><%= staff_member.role_category %></td>
+        <td><%= staff_member.shirt_size %></td>
+        <td><%= staff_member.returning_staff %></td>
+        <td><%= staff_member.house %></td>
+        <td><%= staff_member.guiding_class %></td>
+        <td><%= staff_member.food_allergies %></td>
+        <td><%= staff_member.background_check_agreement %></td>
+        <td><%= staff_member.program_philosophy_agreement %></td>
+        <td><%= staff_member.notes %></td>
+        <td><%= staff_member.parent_permission %></td>
+        <td><%= staff_member.parent_email %></td>
+        <td><%= staff_member.entering_grade %></td>
+        <td><%= staff_member.activities %></td>
+        <td><%= staff_member.essay %></td>
+        <td><%= link_to 'Show', staff_member %></td>
+        <td><%= link_to 'Edit', edit_staff_member_path(staff_member) %></td>
+        <td><%= link_to 'Destroy', staff_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Staff member', new_staff_member_path %>

@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  family_id: 1
+  first_name: MyString
+  last_name: MyString
+  preferred_name: MyString
+  wiogora_name: MyString
+  phone: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  email: MyString
+  education_experience: MyText
+  why_work_here: MyText
+  availability: MyString
+  role: MyString
+  role_category: MyString
+  shirt_size: MyString
+  returning_staff: MyString
+  house: MyString
+  guiding_class: MyString
+  food_allergies: MyText
+  background_check_agreement: MyString
+  program_philosophy_agreement: MyString
+  notes: MyText
+  parent_permission: MyString
+  parent_email: MyString
+  entering_grade: MyString
+  activities: MyText
+  essay: MyText
+
+two:
+  family_id: 1
+  first_name: MyString
+  last_name: MyString
+  preferred_name: MyString
+  wiogora_name: MyString
+  phone: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  email: MyString
+  education_experience: MyText
+  why_work_here: MyText
+  availability: MyString
+  role: MyString
+  role_category: MyString
+  shirt_size: MyString
+  returning_staff: MyString
+  house: MyString
+  guiding_class: MyString
+  food_allergies: MyText
+  background_check_agreement: MyString
+  program_philosophy_agreement: MyString
+  notes: MyText
+  parent_permission: MyString
+  parent_email: MyString
+  entering_grade: MyString
+  activities: MyText
+  essay: MyText

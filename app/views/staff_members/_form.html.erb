@@ -1,0 +1,137 @@
+<%= form_for(@staff_member) do |f| %>
+  <% if @staff_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@staff_member.errors.count, "error") %> prohibited this staff_member from being saved:</h2>
+
+      <ul>
+      <% @staff_member.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :family_id %><br>
+    <%= f.number_field :family_id %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :preferred_name %><br>
+    <%= f.text_field :preferred_name %>
+  </div>
+  <div class="field">
+    <%= f.label :wiogora_name %><br>
+    <%= f.text_field :wiogora_name %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :address1 %><br>
+    <%= f.text_field :address1 %>
+  </div>
+  <div class="field">
+    <%= f.label :address2 %><br>
+    <%= f.text_field :address2 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br>
+    <%= f.text_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :education_experience %><br>
+    <%= f.text_area :education_experience %>
+  </div>
+  <div class="field">
+    <%= f.label :why_work_here %><br>
+    <%= f.text_area :why_work_here %>
+  </div>
+  <div class="field">
+    <%= f.label :availability %><br>
+    <%= f.text_field :availability %>
+  </div>
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </div>
+  <div class="field">
+    <%= f.label :role_category %><br>
+    <%= f.text_field :role_category %>
+  </div>
+  <div class="field">
+    <%= f.label :shirt_size %><br>
+    <%= f.text_field :shirt_size %>
+  </div>
+  <div class="field">
+    <%= f.label :returning_staff %><br>
+    <%= f.text_field :returning_staff %>
+  </div>
+  <div class="field">
+    <%= f.label :house %><br>
+    <%= f.text_field :house %>
+  </div>
+  <div class="field">
+    <%= f.label :guiding_class %><br>
+    <%= f.text_field :guiding_class %>
+  </div>
+  <div class="field">
+    <%= f.label :food_allergies %><br>
+    <%= f.text_area :food_allergies %>
+  </div>
+  <div class="field">
+    <%= f.label :background_check_agreement %><br>
+    <%= f.text_field :background_check_agreement %>
+  </div>
+  <div class="field">
+    <%= f.label :program_philosophy_agreement %><br>
+    <%= f.text_field :program_philosophy_agreement %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_permission %><br>
+    <%= f.text_field :parent_permission %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_email %><br>
+    <%= f.text_field :parent_email %>
+  </div>
+  <div class="field">
+    <%= f.label :entering_grade %><br>
+    <%= f.text_field :entering_grade %>
+  </div>
+  <div class="field">
+    <%= f.label :activities %><br>
+    <%= f.text_area :activities %>
+  </div>
+  <div class="field">
+    <%= f.label :essay %><br>
+    <%= f.text_area :essay %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
