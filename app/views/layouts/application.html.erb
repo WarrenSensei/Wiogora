@@ -5,6 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  </script>
+<![endif]-->
+
 </head>
 <body>
 
@@ -13,16 +19,8 @@
 	<%= link_to image_tag("logo.png", alt: "Wiogora School of Wonder & Wisdom"), root_path, :class => "sites-header-logo" %>
 
 
-	<ul class=sites-header-nav>
-		<%= link_to_in_li "Home", root_path %>
-		<%= link_to_in_li "Campers", campers_path %>
-		<%= link_to_in_li "Families", families_path %>
-		<%= link_to_in_li "Payments", payments_path %>
-		<%= link_to_in_li "Registrations", registrations_path %>
-		<%= link_to_in_li "Shirt orders", shirt_orders_path %>
-		<%= link_to_in_li "Frequently Asked Questions", pages_faq_path %>
-	</ul>
-
+	<%= render 'layouts/navbar' %>
+	
 	<%= yield %>
 
 </body>

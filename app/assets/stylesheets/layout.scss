@@ -78,6 +78,14 @@ body{
 	background-color: $active-link-background;
 }
 
+.sites-header-nav li li {
+	display:none;
+}
+.sites-header-nav li:hover li {
+	display:block;
+	width:100%;
+}
+
 .sites-header-nav a {
 	margin: -5px;
 	padding: 5px;

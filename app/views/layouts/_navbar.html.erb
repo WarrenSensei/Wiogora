@@ -1,0 +1,10 @@
+<ul class=sites-header-nav>
+	<%= link_to_in_li "Home", root_path %>
+	<%= link_to_in_li "Campers", campers_path %>
+	<%= link_to_in_li "Families", families_path %>
+	<%= link_to_in_li "Payments", payments_path %>
+	<%= link_to_in_li "Registrations", registrations_path %>
+	<%= link_to_in_li "Shirt orders", shirt_orders_path %>
+	<%= link_to_in_li "Frequently Asked Questions", pages_faq_path %>
+	<%= li_dropdown_list "FAQs", pages_faq_path, {"Q1" => "A1", "Q2" => "A2"} %>
+</ul>
